@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
-import './App.css'
-import { useState } from 'react'
+import React from 'react'
+import Navbar from './componets/Navbar'
+import Footer from './componets/footer'
 
 const App = () => {
-  const [a , setA] = useState(0)
   return (
     <div>
-      <h1>Count:{a}</h1>
-      <button onClick={() => setA(a+1)}>+</button>
-      <button onClick={() => setA(a-1)}>-</button>
+      <Navbar/>
+      <main className='display'></main>
+      <Footer/>
     </div>
   )
 }
